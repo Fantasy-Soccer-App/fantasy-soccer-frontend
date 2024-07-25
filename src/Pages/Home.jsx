@@ -1,16 +1,9 @@
 import "../CSS/Home.css";
 
-export default function Home({ dataArr }) {
+export default function Home() {
     return (
         <>
-            {dataArr.map((obj, idx) => {
-                return (
-                <>
-                    <p id={idx} >{obj.name}</p>
-                    <img className="player-image" id={idx} src={`${obj.name}.png`}/>
-                </>
-                )
-            })}
+         HOME PAGE
         </>
     )
 }

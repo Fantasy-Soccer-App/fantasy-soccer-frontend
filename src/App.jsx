@@ -2,12 +2,31 @@ import { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css';
 
+//Components
+import NavBar from './Components/NavBar';
+
+//Pages
+import Home from './Pages/Home';
+
 function App() {
 
+  const API = import.meta.env.VITE_API_URL;
+  const [ dataArr, setDataArr ] = useState([])
+  
+  useEffect(() => {
+    fetch(`${API}/stats`).then(res => {
+      return res.json();
+    })
+    .then(res => setDataArr(res));
+  },[])
+
   return (
-    <>
-      Fantasy Soccer App
-    </>
+    <Router>
+      <NavBar/>
+      <Routes>
+        <Route path="/" element={<Home dataArr={dataArr}/>}/>
+      </Routes>
+    </Router>
   )
 }
 

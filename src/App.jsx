@@ -7,6 +7,7 @@ import NavBar from './Components/NavBar';
 
 //Pages
 import Home from './Pages/Home';
+import Index from './Pages/Index';
 
 function App() {
 
@@ -24,7 +25,8 @@ function App() {
     <Router>
       <NavBar/>
       <Routes>
-        <Route path="/" element={<Home dataArr={dataArr}/>}/>
+        <Route path="/" element={<Home />}/>
+        <Route path="/index" element={<Index dataArr={dataArr}/>}/>
       </Routes>
     </Router>
   )

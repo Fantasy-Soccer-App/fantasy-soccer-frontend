@@ -1,20 +1,11 @@
-import "../CSS/Index.css";
+import  "../CSS/Index.css";
 
-
-
-export default function Index({ dataArr }) {
+export default function Index() {
     return (
-        <>
-               {dataArr.map((obj, idx) => {
-                return (
-                <>
-                    <p id={idx} >{obj.name}</p>
-                    <div id={idx} className="image-container">
-                        <img className="player-image" id={idx} src={`${obj.name}.png`}/>
-                    </div>
-                </>
-                )
-            })}
-        </>
+        <div className="Index">
+            <Stats />
+            <h1>This is the entire list of players for the Team Page!</h1>>
+        </div>
     )
 }
+

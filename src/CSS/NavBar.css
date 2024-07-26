@@ -1,34 +1,92 @@
-.navbar-container {
-    /* border: 1px solid black; */
-    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
-    display: grid;
-    grid-template-columns: 70% 30%;
-    width: 100%;
-    height: 120px;
+/* src/CSS/NavBar.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; /* Evenly space items */
+    background-color: #AE1D1E;
+    position: fixed; /* Fixed positioning to stick at the top */
+    top: 0; /* Aligns the nav bar at the top */
+    left: 0;
+    right: 0;
+    height: 50px;
+    padding: 0 20px; /* Horizontal padding for spacing */
+    /* text-shadow: 0 2px 4px rgba(255, 255, 255, 0.3);  */
+    z-index: 1000; /* Ensures the nav bar stays on top */
+    margin: 0;
+
+
+p {
+    color: #FFF;
+    text-align: center;
+    padding: 12px;
+    font-size: 0.8rem;
+    margin: 0;
+    transition: transform 0.4s ease, color 0.4s ease, text-shadow 0.4s ease, box-shadow 0.4s ease;
+    display: inline-block;
+    position: relative;
+     /* font-weight: 900; */
+    /* background: #AE1D1E; */
+    /* border-radius: 10px */
 }
 
-.logo-name-container {
-    /* border: 1px solid black; */
-    display: flex;
-    flex-direction: row;
-    gap: 3%;
-    padding-left: 8%;
-    height: 50%;
-    margin-top: 2.8%;
+p:hover {
+    color: #FFF; /* Optional: change text color on hover */
+    transform: scale(1.3); /* Slightly enlarge the text */
+    text-shadow: 0 0 10px #FFF;
+    /* box-shadow: 0 6px 12px rgba(255, 255, 255, 0.4);  */
+    z-index: 20;
+}
+
+p:active {
+    text-shadow: 0 0 15px #FFF;
 }
 
 .logo {
-    /* border: 1px solid black; */
+    margin-top: 5px;
 }
 
-.navbar-btn {
-    border: none;
-    width: 50%;
-    height: 40%;
-    margin-top: 8%;
-    margin-left: 30%;
-    border-radius: 10px;
+
+@media screen and (max-width: 500px) {
+    nav {
+        flex-direction: column;
+    }
+
+    p {
+        padding: 10px;
+    }
 }
-.navbar-btn:hover {
-    cursor: pointer;
+
 }
+/* basic red: #FE3037
+dark red: #AE1D1E
+black: #1E1414
+white: #FFF */
+
+
+/* Normal state */
+/* a {
+    position: relative; 
+    text-decoration: none;
+    color: #FFF;
+    overflow: hidden; 
+}
+
+a::before {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(174, 29, 30, 0.5);
+    z-index: -1;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+a:hover::before {
+    opacity: 1;
+} */

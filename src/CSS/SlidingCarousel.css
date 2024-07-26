@@ -1,0 +1,30 @@
+.slidingCarousel-container {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 600px;
+    border-radius: 7px;
+    margin-top: 40px;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+
+.carousel-btn {
+    position: absolute;
+    margin-top: 300px;
+    width: 30%;
+    height: 10%;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.carousel-btn:hover {
+    cursor: pointer;
+}

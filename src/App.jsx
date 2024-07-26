@@ -4,6 +4,7 @@ import './App.css';
 
 //Components
 import NavBar from './Components/NavBar';
+import SlidingCarousel from './Components/SlidingCarousel';
 
 //Pages
 import Home from './Pages/Home';
@@ -21,11 +22,19 @@ function App() {
     .then(res => setDataArr(res));
   },[])
 
+
+  const homeSlides = [
+    { url: "image1.jpeg", title: "first image" },
+    { url: "image2.jpeg", title: "second image" },
+    { url: "image3.jpeg", title: "third image" }
+  ]
+
+
   return (
     <Router>
       <NavBar/>
       <Routes>
-        <Route path="/" element={<Home />}/>
+        <Route path="/" element={<Home homeSlides={homeSlides} SlidingCarousel={SlidingCarousel}/>}/>
         <Route path="/index" element={<Index dataArr={dataArr}/>}/>
       </Routes>
     </Router>

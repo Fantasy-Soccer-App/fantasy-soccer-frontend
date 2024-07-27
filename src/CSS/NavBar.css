@@ -12,7 +12,7 @@ nav {
     top: 0; /* Aligns the nav bar at the top */
     left: 0;
     right: 0;
-    height: 50px;
+    height: 125px;
     padding: 0 20px; /* Horizontal padding for spacing */
     /* text-shadow: 0 2px 4px rgba(255, 255, 255, 0.3);  */
     z-index: 1000; /* Ensures the nav bar stays on top */
@@ -23,7 +23,7 @@ p {
     color: #FFF;
     text-align: center;
     padding: 12px;
-    font-size: 0.8rem;
+    font-size: 1.05rem;
     margin: 0;
     transition: transform 0.4s ease, color 0.4s ease, text-shadow 0.4s ease, box-shadow 0.4s ease;
     display: inline-block;

@@ -11,19 +11,19 @@ export default function NavBar() {
                 </p>
             </Link>
 
-            <Link to="/">
-                <p>Login</p>
+            <Link to="/myteam">
+                <p>My Team</p>
             </Link>
 
             <Link to="/home">
                 <p>Home</p>
             </Link>
 
-            <Link to="/stats">
+            <Link to="/players">
                 <p>Player Directory</p>
             </Link>
 
-            <Link to="/stats/add">
+            <Link to="/players/add">
                 <p>Add</p>
             </Link>
 

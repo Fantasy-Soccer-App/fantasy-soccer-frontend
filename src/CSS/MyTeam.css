@@ -1,0 +1,26 @@
+.myteam-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.myteam-title {
+    margin-top: 150px;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+
+.player-card-container2 {
+    width: 45%;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 10px;
+    margin-top: 30px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    background: url("playercard.png");
+    border-radius: 10px;
+}

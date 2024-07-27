@@ -4,16 +4,15 @@ import tailwindcss from 'tailwindcss';
 import autoprefixer from 'autoprefixer';
 
 // https://vitejs.dev/config/
+
 export default defineConfig({
-  plugins: [
-    react()
-  ],
+  plugins: [react()],
   css: {
     postcss: {
       plugins: [
-        tailwindcss(),
-        autoprefixer()
-      ]
-    }
-  }
-});
+        tailwindcss,
+        autoprefixer,
+      ],
+    },
+  },
+})

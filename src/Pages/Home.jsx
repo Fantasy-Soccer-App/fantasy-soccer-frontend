@@ -1,9 +1,13 @@
+import SlidingCarousel from "../Components/SlidingCarousel";
 import "../CSS/Home.css";
 
-export default function Home() {
+export default function Home({ NavBar }) {
     return (
         <>
-         HOME PAGE
+        <NavBar/>
+        <div className="sliding-carousel-container">
+            <SlidingCarousel/>
+        </div>
         </>
     )
 }

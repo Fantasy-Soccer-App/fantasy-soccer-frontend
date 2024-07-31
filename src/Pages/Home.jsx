@@ -8,6 +8,7 @@ export default function Home({ NavBar }) {
         <div className="sliding-carousel-container">
             <SlidingCarousel/>
         </div>
+        <img className="ad" src="/mockad.png"/>
         </>
     )
 }

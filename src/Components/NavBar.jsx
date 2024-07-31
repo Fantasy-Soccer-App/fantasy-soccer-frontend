@@ -7,7 +7,7 @@ export default function NavBar() {
             
             <Link to="/home">
                 <p className="logo">
-                    <img src="src/assets/fs-logo-without-background.png" alt="logo" className="w-8 h-8 rounded-full" />
+                    <img src="/soccer icon.png" alt="logo" className="navbar-icon" />
                 </p>
             </Link>
 

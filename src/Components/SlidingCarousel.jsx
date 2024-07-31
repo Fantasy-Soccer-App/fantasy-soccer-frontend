@@ -31,6 +31,7 @@ export default  function SlidingCarousel() {
         <div className="slidingCarousel-container">
             <div className="opacity-container">
                 <img className="carousel-image" src={slides[currIndex].url}/>
+                <p className="sliding-carousel-text">Welcome to the world of soccer... <br></br><span className="cheat">---------</span>Ready to dive in?</p>
                 <button className="sliding-carousel-btn" type="button" onClick={() => navigate("/myteam")}>Create Your Team</button>
             </div>
         </div>

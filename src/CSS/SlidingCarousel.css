@@ -33,3 +33,14 @@
     width: 100%;
     height: 100%;
 }
+
+.sliding-carousel-text {
+    position: absolute;
+    color: white;
+    margin-top: 10%;
+    font-size: 40px;;
+}
+
+.cheat {
+    color: transparent;
+}
